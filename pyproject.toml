@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "onco-python"
-version = "0.1.0"
+name = "jepper-task-sort"
+version = "1.0.0"
 description = ""
 authors = ["Your Name <you@example.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "~3.11.0"
+python = "~3.12.0"
 tomlkit = "~0.12.5"
 
 [tool.poetry.group.dev.dependencies]
