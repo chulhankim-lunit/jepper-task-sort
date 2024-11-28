@@ -1,6 +1,6 @@
 # jepper-task-sort
 
-A template project for Python based software.
+A good task.
 
 ## Contents
 
