@@ -1,0 +1,10 @@
+.venv
+__pycache__
+*.pyc
+.pytest_cache
+poetry.toml
+.flake8
+.gitignore
+.pre-commit-config.yaml
+README.md
+docs
