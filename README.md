@@ -1,6 +1,6 @@
 # jepper-task-sort
 
-A task.
+A good task.
 
 ## Contents
 
