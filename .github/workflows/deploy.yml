@@ -1,0 +1,20 @@
+name: Cool CI
+
+on:
+  repository_dispatch:
+    types: [deploy]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.client_payload.version }}
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.12
+      - name: Print Python version
+        run: python --version
