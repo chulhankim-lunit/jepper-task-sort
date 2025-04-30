@@ -10,11 +10,13 @@ jobs:
     steps:
       - name: Version to checkout
         run: |
-          echo "Version to checkout: ${{ github.event.client_payload.ref }}"
+          echo "Version to checkout: ${{ github.event.client_payload.version }}"
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.client_payload.ref }}
+          fetch-depth: 0
+          fetch-tags: true
+          ref: ${{ github.event.client_payload.version }}
       - name: Install Python
         uses: actions/setup-python@v5
         with:
