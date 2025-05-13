@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-24.04
     env:
       ABC: ${{ github.ref_name }}
-      ABC2: ${{ github.ref_name }}-${{ github.ref_name }}-1.2.3.4
+      ABC2: hello_world:${{ github.ref_name }}
     steps:
       - name: Echo
         run: |
